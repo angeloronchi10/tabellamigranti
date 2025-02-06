@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" a href="style.css">
-    <title>Importazione CSV</title>
-   
+    <title>TABELLA MIGRANTI</title>
+    
 </head>
 <body>
-    <h1>TABELLA CSV MIGRANTI</h1>
+    <h1>TABELLA MIGRANTI</h1>
     <input type="file" onchange="readFile(this)" accept=".csv" />
     <div id="tableContainer"></div>
 
@@ -55,7 +55,7 @@
 
         function createTable(data) {
             let tableHtml = '<table>';
-           
+            
          
             const headers = Object.keys(data[0]);
             tableHtml += '<tr>';
